@@ -38,7 +38,7 @@ def predict():
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Flask app exposing yolov5 models")
+    parser = argparse.ArgumentParser(description="i4Q Workload Demo Application")
     parser.add_argument("--port", default=5000, type=int, help="port number")
     parser.add_argument("--model_restapi", default=os.environ.get('MODEL_RESTAPI'), type=str, help="supporting restapi port number")
     args = parser.parse_args()
