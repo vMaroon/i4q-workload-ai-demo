@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: i4q-demo-restapi
+  namespace: i4q-demo
+  labels:
+    app: i4q-demo-restapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: i4q-demo-restapi
+  template:
+    metadata:
+      labels:
+        app: i4q-demo-restapi
+    spec:
+      containers:
+        - name: i4q-demo-restapi
+          image: quay.io/maroonayoub/i4q-restapi:5
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 6000
