@@ -1,4 +1,0 @@
-flask
-requests
-ipython  # interactive notebook
-psutil  # system utilization

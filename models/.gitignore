@@ -1,7 +1,0 @@
-venv/
-.vscode
-*.pt
-*.pyc
-static/*.png
-rest-api/static/*.png
-.DS_Store
