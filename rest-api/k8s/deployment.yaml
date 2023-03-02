@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: i4q-demo-restapi
-          image: quay.io/maroonayoub/i4q-restapi:5
+          image: quay.io/maroonayoub/i4q-restapi:200
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 6000
