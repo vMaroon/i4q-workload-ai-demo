@@ -17,8 +17,8 @@ spec:
         app: i4q-demo-restapi
     spec:
       securityContext:
-        runAsUser: 1000790000
-        fsGroup: 1000790000
+        runAsUser: 1000
+        fsGroup: 1000
       containers:
         - name: i4q-demo-restapi
           image: quay.io/maroonayoub/i4q-restapi:5
